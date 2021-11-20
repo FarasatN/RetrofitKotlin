@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/rowItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:gravity="center">
+
+    </TextView>
+<!--    <TextView-->
+<!--        android:id="@+id/location"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/continent"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/positiveRate"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/newCasesPerMillion"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/newCasesSmoothed"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/newCasesSmoothedPerMillion"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/totalCases"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/totalCasesPerMillion"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/newDeaths"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/newDeathsPerMillion"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/newDeathsSmoothed"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/newDeathsSmoothedPerMillion"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/newPeopleVaccinatedSmoothed"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/newPeopleVaccinatedSmoothedPerHundred"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/newTests"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/newTestsPerThousand"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/newTestsSmoothed"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/newTestsSmoothedPerThousand"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/newVaccinations"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/newVaccinationsSmoothed"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/newVaccinationsSmoothedPerMillion"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/peopleFullyVaccinated"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/peopleFullyVaccinatedPerHundred"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/peopleVaccinated"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/peopleVaccinatedPerHundred"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/testsPerCase"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/totalBoosters"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/totalBoostersPerHundred"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/totalDeaths"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/totalDeathsPerMillion"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/totalTests"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/totalTestsPerThousand"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/totalVaccinations"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/totalVaccinationsPerHundred"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/weeklyHospAdmissions"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/weeklyHospAdmissionsPerMillion"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/weeklyIcuAdmissions"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/weeklyIcuAdmissionsPerMillion"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/testsUnits"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/hospPatients"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/hospPatientsPerMillion"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/hospitalBedsPerThousand"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/icuPatients"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/icuPatientsPerMillion"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/excessMortality"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/excessMortalityCumulativeAbsolute"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/excessMortalityCumulative"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/handwashingFacilities"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/aged65Older"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/aged70Older"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/cardiovascDeathRate"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/diabetesPrevalence"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/maleSmokers"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/femaleSmokers"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/population"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/populationDensity"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/medianAge"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/gdpPerCapita"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/humanDevelopmentIndex"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/reproductionRate"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/lifeExpectancy"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/extremePoverty"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+<!--    <TextView-->
+<!--        android:id="@+id/stringencyIndex"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="30sp"-->
+<!--        android:text="Test"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="#E91E63"-->
+<!--        android:gravity="center">-->
+
+<!--    </TextView>-->
+
+
+</LinearLayout>
