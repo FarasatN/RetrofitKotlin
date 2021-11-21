@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/faras/AndroidStudioProjects/RetrofitKotlin/app/src/main/res/layout/activity_html.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/faras/AndroidStudioProjects/RetrofitKotlin/app/src/main/res/layout/activity_jsoup_html.xml" value="0.14739583333333334" />
         <entry key="..\:/Users/faras/AndroidStudioProjects/RetrofitKotlin/app/src/main/res/layout/activity_main.xml" value="0.18297101449275363" />
         <entry key="..\:/Users/faras/AndroidStudioProjects/RetrofitKotlin/app/src/main/res/layout/row_layout.xml" value="0.18" />
       </map>

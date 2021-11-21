@@ -2,12 +2,14 @@ package com.farasatnovruzov.retrofitkotlin.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.farasatnovruzov.retrofitkotlin.R
 import com.farasatnovruzov.retrofitkotlin.adapter.CovidAdapter
 import com.farasatnovruzov.retrofitkotlin.databinding.ActivityMainBinding
 import com.farasatnovruzov.retrofitkotlin.model1.Covid
+import com.farasatnovruzov.retrofitkotlin.service.CovidHtml
 import com.farasatnovruzov.retrofitkotlin.service.ServiceAPI
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.disposables.CompositeDisposable
@@ -16,6 +18,14 @@ import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.*
 import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
+import okhttp3.ResponseBody
+
+import retrofit2.Retrofit
+
+import okhttp3.OkHttpClient
+import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
+import org.jsoup.select.Elements
 
 
 class MainActivity : AppCompatActivity() {
@@ -60,6 +70,23 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = layoutManager
 
         loadData()
+
+//        val doc: Document = Jsoup.connect("https://koronavirusinfo.az/az/page/statistika/azerbaycanda-cari-veziyyet").get()
+//        doc.select("p").forEach(System.out::println)
+
+//        val blogUrl = "https://spring.io/blog"
+//        val doc = Jsoup.connect(blogUrl).get()
+//        println(doc)
+
+        val doc = Jsoup.connect("https://en.wikipedia.org/").get()
+        println(doc.title())
+        val newsHeadlines: Elements = doc.select("#mp-itn b a")
+        for (headline in newsHeadlines) {
+            println(
+                "%s\n\t%s"+""+
+                headline.attr("title")+""+ headline.absUrl("href")
+            )
+        }
 
 
     }
